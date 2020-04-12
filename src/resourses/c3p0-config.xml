@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<c3p0-config>
+    <!--默认配置-->
+    <default-config>
+        <!-- 初始化连接数 -->
+        <property name="initialPoolSize">10</property>
+        <!-- 设置连接超时时间 -->
+        <property name="maxIdleTime">30</property>
+        <!-- 设置最大连接数 -->
+        <property name="maxPoolSize">100</property>
+        <!-- 设置最小连接数 -->
+        <property name="minPoolSize">10</property>
+        <!-- 设置最大执行sql语句对象个数 -->
+        <property name="maxStatements">200</property>
+    </default-config>
+
+    <!--配置连接池mysql-->
+    <named-config name="mysql">
+        <property name="driverClass">com.mysql.cj.jdbc.Driver</property>
+        <property name="jdbcUrl">jdbc:mysql://39.106.101.244:3306/susu?serverTimezone=Asia/Shanghai&amp;useUnicode=true&amp;characterEncoding=UTF-8&amp;userSSL=false&amp;serverTimezone=GMT%2B8</property>
+        <property name="user">root</property>
+        <property name="password">3228516</property>
+        <property name="initialPoolSize">10</property>
+        <property name="maxIdleTime">30</property>
+        <property name="maxPoolSize">100</property>
+        <property name="minPoolSize">10</property>
+        <property name="maxStatements">200</property>
+    </named-config>
+
+    <!--配置连接池2-->
+    ......
+</c3p0-config>
